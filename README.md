@@ -4,7 +4,7 @@
 Retrieves the sha of a .zip file on windows explorer
 
 <h2>How to install procedure:</h2>
-<li>1) Download binary from github at https://github.com/yvester/FaireLeChat</li>
+<li>1) Download binary from github at https://github.com/yvester/FaireLeChat/archive/master.zip</li>
 <li>2) Unzip the binary.</li>
 <li>3) Execute the install.bat file as administrator.</li>
 
