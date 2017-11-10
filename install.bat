@@ -11,7 +11,7 @@ xcopy /y C:%NamePath%source\ChatReg.bat "%ProgramFiles(x86)%\FaireLeChat"
 xcopy /y C:%NamePath%source\fciv.exe "%ProgramFiles(x86)%\FaireLeChat"
 
 REM Execute the registry update
-C:%NamePath%ChatReg.bat "%ProgramFiles(x86)%\FaireLeChat"
+"%ProgramFiles(x86)%\FaireLeChat\ChatReg.bat"
 
 REM C:\\Users\\ytanguy\\Downloads\\AAA\\testmd5sum\\fciv.exe -wp -md5 %1 >> temp.txt
 REM set /p VAR=<temp.txt
