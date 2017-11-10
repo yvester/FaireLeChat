@@ -1,7 +1,7 @@
 <h1>FaireLeChat ou/or SeeTheSha</h1>
 
 <h2>Function:</h2>
-Retrieves the sha of a .zip file on window explorer
+Retrieves the sha of a .zip file on windows explorer
 
 <h2>How to install procedure:</h2>
 <li>1) Download binary from github at https://github.com/yvester/FaireLeChat</li>
