@@ -1,7 +1,7 @@
 # FaireLeChat or see the sha
 
-Function:
-Retrieves the sha of a .zip file on window windows explorer
+<h1>Function:</h1>
+Retrieves the sha of a .zip file on window explorer
 
 How to install procedure:
 1) Download binary from github at https://github.com/yvester/FaireLeChat
