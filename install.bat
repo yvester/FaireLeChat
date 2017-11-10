@@ -6,9 +6,9 @@ RMDIR /S /Q %ProgramFiles(x86)%\FaireLeChat
 mkdir FaireLeChat
 chdir FaireLeChat
 set NamePath=%~p0
-xcopy /y C:%NamePath%Chatbat.bat "%ProgramFiles(x86)%\FaireLeChat"
-xcopy /y C:%NamePath%ChatReg.bat "%ProgramFiles(x86)%\FaireLeChat"
-xcopy /y C:%NamePath%fciv.exe "%ProgramFiles(x86)%\FaireLeChat"
+xcopy /y C:%NamePath%source\Chatbat.bat "%ProgramFiles(x86)%\FaireLeChat"
+xcopy /y C:%NamePath%source\ChatReg.bat "%ProgramFiles(x86)%\FaireLeChat"
+xcopy /y C:%NamePath%source\fciv.exe "%ProgramFiles(x86)%\FaireLeChat"
 
 REM Execute the registry update
 C:%NamePath%ChatReg.bat "%ProgramFiles(x86)%\FaireLeChat"
