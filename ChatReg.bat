@@ -1,5 +1,5 @@
 @echo off
-echo Welcome to FaireLeChat§!
+echo Welcome to FaireLeChat§ pour la branche1!
 REM reg add HKEY_CLASSES_ROOT\7-Zip.zip\shell\FaireLeChat\command /t REG_SZ /d "C:\\Users\\ytanguy\\Documents\\documentation\\\\Testbat.bat %%1"     <<<<< WORKS
 REM reg add HKEY_CLASSES_ROOT\7-Zip.zip\shell\FaireLeChat\command /t REG_SZ /d "C:\Program Files (x86)\FaireLeChat\Testbat.bat %1"  /f
 REM reg add HKEY_CLASSES_ROOT\7-Zip.zip\shell\FaireLeChat\command /t REG_SZ /d "C:\Program Files (x86)\FaireLeChat\Testbat.bat" "%1"  /f
