@@ -9,9 +9,9 @@ Retrieves the sha of a .zip file on windows explorer
 <li>3) Execute the install.bat file as administrator.</li>
 
 <h2>How to use the program:</h2>
-<li>1) Right click on the .zip you want to see the sha.</li>
+<li>1) Right click on the filename.zip you want to see the sha.</li>
 <li>2) Click on FaireLeChat.</li>
-<li>3) A temp.txt file that contains the sha is created on the current folder.</li>
+<li>3) A filename.sha file that contains the sha is created in the current folder.</li>
  
 
 
