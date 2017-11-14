@@ -4,15 +4,22 @@ chdir %ProgramFiles(x86)%
 del /s /q %ProgramFiles(x86)%\FaireLeChat\*
 RMDIR /S /Q %ProgramFiles(x86)%\FaireLeChat
 mkdir FaireLeChat
-chdir FaireLeChat
+mkdir FaireLeChat\source
+mkdir FaireLeChat\config
+chdir FaireLeChat\source
 set NamePath=%~p0
-xcopy /y C:%NamePath%source\Chatbat.bat "%ProgramFiles(x86)%\FaireLeChat"
-xcopy /y C:%NamePath%source\ChatReg.bat "%ProgramFiles(x86)%\FaireLeChat"
-xcopy /y C:%NamePath%\chatConfig.bat "%ProgramFiles(x86)%\FaireLeChat"
-xcopy /y C:%NamePath%source\fciv.exe "%ProgramFiles(x86)%\FaireLeChat"
+echo namepath %NamePath%
+echo programpath  "%ProgramFiles(x86)%\FaireLeChat\source"
+xcopy /y C:%NamePath%source\Chatbat.bat "%ProgramFiles(x86)%\FaireLeChat\source"
+xcopy /y C:%NamePath%source\ChatReg.bat "%ProgramFiles(x86)%\FaireLeChat\source"
+xcopy /y C:%NamePath%config\chatConfig.bat "%ProgramFiles(x86)%\FaireLeChat\config"
+xcopy /y C:%NamePath%source\fciv.exe "%ProgramFiles(x86)%\FaireLeChat\source"
+pause
 
 REM Execute the registry update
-"%ProgramFiles(x86)%\FaireLeChat\ChatReg.bat"
+"C:%NamePath%source\ChatReg.bat"
+
+pause
 
 REM C:\\Users\\ytanguy\\Downloads\\AAA\\testmd5sum\\fciv.exe -wp -md5 %1 >> temp.txt
 REM set /p VAR=<temp.txt
