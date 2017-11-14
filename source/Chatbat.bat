@@ -17,21 +17,34 @@ SETLOCAL EnableDelayedExpansion
 REM ***************************************
 REM CopyToClipBoard
 REM ***************************************
+xcopy /y %1 "%TEMP%" 
 if %CopyToClip% == Y (
-"%~dp0fciv.exe" -wp -md5 %1 > %~n1.shax
-for /f "tokens=*" %%a in (%~n1.shax) do (
+"%~dp0fciv.exe" -wp -md5 %TEMP%\%~n1%~x1 > %TEMP%\%~n1.shax
+for /f "tokens=*" %%a in (%TEMP%\%~n1.shax) do (
 set yy=%%a
 ) 
 echo !yy! | clip 
-del %~n1.shax
+del %TEMP%\%~n1%~x1
+del %TEMP%\%~n1.shax
 )
 
 REM ***************************************
 REM CopyToFile
 REM ***************************************
+xcopy /y %1 "%TEMP%" 
 if %CreateShaFile% == Y ( 
-"%~dp0fciv.exe" -wp -md5 %1 > %~n1.sha 
+"%~dp0fciv.exe" -wp -md5 %TEMP%\%~n1%~x1 > %~n1.sha
 )
+del %TEMP%\%~n1%~x1
+
+
+REM echo %TEMP%\%~n1.shax
+REM  echo nomducheck %1
+REM  echo nomducheckaaa %TEMP%\%~n1
+REM  echo extension %~x1
+REM  echo justtemp %TEMP%
+REM echo ffff %TEMP%\%~n1.sha
+
 
 REM  *************************************
 REM  *************************************
