@@ -5,7 +5,7 @@ This programs retrieves the sha of a .zip file by right-clicking on the file in 
 
 <h2>How to install procedure:</h2>
 <li>1) Download binary from github at https://github.com/yvester/FaireLeChat/archive/master.zip</li>
-<li>2) Unzip the binary.</li>
+<li>2) Unzip FaireLeChat-master.zip</li>
 <li>3) (Optional) Configure the desired output in the config file ../FaireLeChat/config/chatConfig.bat </li>
 <li>4) Execute the install.bat file as administrator.</li>
 
