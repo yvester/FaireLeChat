@@ -1,7 +1,7 @@
 <h1>FaireLeChat ou/or SeeTheSha</h1>
 
 <h2>Function:</h2>
-This programs retrieves the sha of a .zip file with a right click on windows explorer
+This programs retrieves the sha of a .zip file by right-clicking on the file in windows explorer
 
 <h2>How to install procedure:</h2>
 <li>1) Download binary from github at https://github.com/yvester/FaireLeChat/archive/master.zip</li>
