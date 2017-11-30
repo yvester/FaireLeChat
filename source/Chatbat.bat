@@ -12,25 +12,33 @@ call "%~dp0%..\config\chatConfig.bat"
 echo CopyToClip =  %CopyToClip%
 echo CreateShaFile =  %CreateShaFile%
 
+REM ***************************************
+REM Get the sha
+REM ***************************************
+"%~dp0fciv.exe" -wp -md5 %~n1%~x1 > %~n1.shatemp
+
 SETLOCAL EnableDelayedExpansion
 REM ***************************************
 REM CopyToClipBoard
 REM ***************************************
 if %CopyToClip% == Y (
-"%~dp0fciv.exe" -wp -md5 %~n1%~x1 > %~n1.shatemp
 for /f "tokens=*" %%a in (%~n1.shatemp) do (
 set yy=%%a
 ) 
 echo !yy! | clip 
-del %~n1.shatemp
 )
 
 REM ***************************************
 REM CopyToFile
 REM ***************************************
 if %CreateShaFile% == Y ( 
-"%~dp0fciv.exe" -wp -md5 %~n1%~x1 > %~n1.sha
+echo f | xcopy /f /y %~n1.shatemp %~n1.sha
 )
+
+REM ***************************************
+REM CleanUp
+REM ***************************************
+del %~n1.shatemp
 
 REM  *************************************
 REM  *************************************
