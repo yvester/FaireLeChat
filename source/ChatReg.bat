@@ -3,6 +3,7 @@ echo Set the registry key for FaireLeChat!
 echo %ProgramFiles(x86)%
 reg add HKEY_CLASSES_ROOT\7-Zip.zip\shell\FaireLeChat\command /t REG_SZ /d "\"%ProgramFiles(x86)%\FaireLeChat\source\Chatbat.bat\" ""%%1\" /f
 reg add HKEY_CLASSES_ROOT\7-Zip.tgz\shell\FaireLeChat\command /t REG_SZ /d "\"%ProgramFiles(x86)%\FaireLeChat\source\Chatbat.bat\" ""%%1\" /f
+reg add HKEY_CLASSES_ROOT\7-Zip.tar\shell\FaireLeChat\command /t REG_SZ /d "\"%ProgramFiles(x86)%\FaireLeChat\source\Chatbat.bat\" ""%%1\" /f
 REM eg add HKEY_CLASSES_ROOT\7-Zip.zip\shell\FaireLeChat\command /t REG_SZ /d "%ProgramFiles(x86)%\FaireLeChat\source\Chatbat.bat %%1" /f
 REM reg add HKEY_CLASSES_ROOT\CompressedFolder\shell\FaireLeChat\command /t REG_SZ /d "%ProgramFiles(x86)%\FaireLeChat\Chatbat.bat %%1" /f
 REM Reg add HKEY_CLASSES_ROOT\7-Zip.zip\shell\FaireLeChat\command /t REG_SZ /d "\"%ProgramFiles(x86)%\ramenerlechat\source\Process.bat\" ""%%1\" /f
